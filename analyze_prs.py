@@ -20,7 +20,7 @@ logging.basicConfig(
 # Constants and paths
 BASE_DIR = Path(__file__).resolve().parent
 # The repositories directory is outside the project folder, at the same level
-REPOS_DIR = BASE_DIR.parent / "repos"
+REPOS_DIR = BASE_DIR / "repositories"
 RESULTS_DIR = BASE_DIR / "results"
 TOOLS_DIR = BASE_DIR / "tools"
 JNOSE_JAR = TOOLS_DIR / "jnose-core.jar"
@@ -56,9 +56,11 @@ def run_command(command, cwd=None):
 def checkout_commit(repo_path, commit_hash):
     """Checks out a specific commit."""
     # Use -f to force checkout if there are local changes
-    success, error = run_command(["git", "checkout", "-f", commit_hash], cwd=repo_path)
+    success, output_or_error = run_command(["git", "checkout", "-f", commit_hash], cwd=repo_path)
     if not success:
-        logging.error(f"Error during checkout of {commit_hash} in {repo_path}: {error}")
+        error_msg = f"Error during checkout of {commit_hash} in {repo_path}: {output_or_error}"
+        logging.error(error_msg)
+        print(error_msg)
     return success
 
 def run_jnose(repo_path, output_name, pr_id):
@@ -79,9 +81,9 @@ def run_jnose(repo_path, output_name, pr_id):
     
     docker_cmd = [
         "docker", "run", "--rm",
-        "-v", f"{REPOS_DIR}:/projects:ro",
-        "-v", f"{TOOLS_DIR}:/tools:ro",
-        "-v", f"{temp_output_dir}:/results",
+        "-v", f"{REPOS_DIR.resolve()}:/projects:ro",
+        "-v", f"{TOOLS_DIR.resolve()}:/tools:ro",
+        "-v", f"{temp_output_dir.resolve()}:/results",
         "eclipse-temurin:25-jdk",
         "java", "-cp", "/tools/bin:/tools/jnose-core.jar",
         "JNoseBatchRunner",
@@ -89,10 +91,12 @@ def run_jnose(repo_path, output_name, pr_id):
         "/results"
     ]
     
-    success, error = run_command(docker_cmd)
+    success, output_or_error = run_command(docker_cmd)
     
     if not success:
-        logging.error(f"Error during JNose execution: {error}")
+        error_msg = f"Error during JNose execution for PR {pr_id} on {repo_path}: {output_or_error}"
+        logging.error(error_msg)
+        print(error_msg)
         return False
 
     # Move and rename results
@@ -100,10 +104,14 @@ def run_jnose(repo_path, output_name, pr_id):
     if smells_csv.exists():
         final_csv = RESULTS_DIR / f"{output_name}.csv"
         smells_csv.replace(final_csv)
-        logging.info(f"Result saved in {final_csv}")
+        msg = f"Result successfully saved to {final_csv}"
+        logging.info(msg)
+        print(msg)
         return True
     else:
-        logging.error(f"test_smells.csv not found after execution.")
+        error_msg = f"test_smells.csv not found for PR {pr_id} after execution in {temp_output_dir}. Output: {output_or_error}"
+        logging.error(error_msg)
+        print(error_msg)
         return False
 
 def process_single_pr(pr, repo_path):
