@@ -153,10 +153,22 @@ def analyze_prs(limit=0, workers=8):
     # Identify PRs to analyze based on repository presence in REPOS_DIR
     prs_to_analyze = []
     
+    # Debug: check REPOS_DIR content
+    print(f"Checking REPOS_DIR: {REPOS_DIR.resolve()}")
+    if REPOS_DIR.exists():
+        subdirs = [d.name for d in REPOS_DIR.iterdir() if d.is_dir()]
+        print(f"Found {len(subdirs)} directories in {REPOS_DIR.resolve()}. First 10: {subdirs[:10]}")
+    else:
+        print(f"CRITICAL: REPOS_DIR does not exist at {REPOS_DIR.resolve()}")
+
     for pr in data:
-        repo_path = REPOS_DIR / pr['repo_name']
+        repo_name = pr['repo_name']
+        repo_path = REPOS_DIR / repo_name
         if repo_path.exists():
             prs_to_analyze.append((pr, repo_path))
+        elif not prs_to_analyze and pr == data[0]:
+            # Print a sample mismatch for the first entry to understand the difference
+            print(f"Sample mismatch: PR repo_name is '{repo_name}', expected path {repo_path.resolve()}")
             
         if limit > 0 and len(prs_to_analyze) >= limit:
             break
