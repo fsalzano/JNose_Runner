@@ -19,8 +19,8 @@ logging.basicConfig(
 
 # Constants and paths
 BASE_DIR = Path(__file__).resolve().parent
-# The repositories directory is outside the project folder, in data/repos
-REPOS_DIR = BASE_DIR.parent / "data" / "repos"
+# The repositories directory is outside the project folder, at the path specified by the user
+REPOS_DIR = Path("/home/stakelab/testing-agentic-prs/data/repos")
 RESULTS_DIR = BASE_DIR / "results"
 TOOLS_DIR = BASE_DIR / "tools"
 JNOSE_JAR = TOOLS_DIR / "jnose-core.jar"
