@@ -20,7 +20,7 @@ logging.basicConfig(
 # Constants and paths
 BASE_DIR = Path(__file__).resolve().parent
 # The repositories directory is outside the project folder, at the same level
-REPOS_DIR = BASE_DIR / "repositories"
+REPOS_DIR = BASE_DIR.parent / "repos"
 RESULTS_DIR = BASE_DIR / "results"
 TOOLS_DIR = BASE_DIR / "tools"
 JNOSE_JAR = TOOLS_DIR / "jnose-core.jar"
@@ -162,7 +162,9 @@ def analyze_prs(limit=0, workers=8):
             break
 
     if not prs_to_analyze:
-        logging.warning(f"No repositories found in {REPOS_DIR} for PRs in {CHECKOUT_INFO_FILE}.")
+        msg = f"No repositories found in {REPOS_DIR.resolve()} for PRs in {CHECKOUT_INFO_FILE.resolve()}."
+        logging.warning(msg)
+        print(msg)
         return
 
     logging.info(f"Starting analysis of {len(prs_to_analyze)} PRs with {workers} workers.")
