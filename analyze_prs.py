@@ -162,13 +162,14 @@ def analyze_prs(limit=0, workers=8):
         print(f"CRITICAL: REPOS_DIR does not exist at {REPOS_DIR.resolve()}")
 
     for pr in data:
-        repo_name = pr['repo_name']
+        # Use repo_full_name as it likely contains the correct path structure (e.g. "owner/repo")
+        repo_name = pr['repo_full_name']
         repo_path = REPOS_DIR / repo_name
         if repo_path.exists():
             prs_to_analyze.append((pr, repo_path))
         elif not prs_to_analyze and pr == data[0]:
             # Print a sample mismatch for the first entry to understand the difference
-            print(f"Sample mismatch: PR repo_name is '{repo_name}', expected path {repo_path.resolve()}")
+            print(f"Sample mismatch: PR repo_full_name is '{repo_name}', expected path {repo_path.resolve()}")
             
         if limit > 0 and len(prs_to_analyze) >= limit:
             break
