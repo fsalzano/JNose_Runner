@@ -1,0 +1,22 @@
+mkdir -p ~/Desktop/emse-analysis/tools/bin
+
+docker run --rm \
+  -v "$HOME/Desktop/emse-analysis:/data" \
+  -w /data/tools \
+  eclipse-temurin:25-jdk \
+  javac \
+  -cp jnose-core.jar \
+  -d bin \
+  JNoseBatchRunner.java
+
+
+  docker run --rm \
+  -v "$HOME/Desktop/emse-analysis:/data" \
+  eclipse-temurin:25-jdk \
+  java \
+  -cp "/data/tools/bin:/data/tools/jnose-core.jar" \
+  JNoseBatchRunner \
+  /data/repositories/commons-io \
+  /data/results/commons-io
+
+  ~/Desktop/emse-analysis/run_jnose_all.sh     repositories/

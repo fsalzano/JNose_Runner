@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+analysis.log
+checkout_info.json
+results/temp_jnose/
+.idea/

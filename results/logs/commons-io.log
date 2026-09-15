@@ -1,0 +1,498 @@
+Analyzing project: /projects/commons-io
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/monitor/FileAlterationObserverTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/FilenameUtilsWildcardTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/AppendableOutputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/FileUtilsListFilesTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/FileWriterWithEncodingTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/UncheckedFilterOutputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/comparator/DirectoryFileComparatorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/ClosedOutputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/RandomAccessFileOutputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/ThresholdingOutputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/TeeOutputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/BuffersTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/IOUtilsWriteTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/FlushShieldOutputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/UncheckedFilterWriterTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/LockableFileWriterTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/ProxyOutputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/TeeWriterTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/ProxyWriterTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/StreamIteratorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/ProxyCollectionWriterTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/comparator/LastModifiedFileComparatorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/BrokenWriterTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/NullWriterTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/ByteOrderParserTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/TaggedWriterTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/comparator/SizeFileComparatorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/ByteArrayOutputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/NullPrintStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/DeferredFileOutputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/QueueOutputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/NullOutputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/ChunkedWriterTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/FileUtilsCleanDirectoryTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/channels/FilterChannelTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/channels/CloseShieldChannelFilterByteChannelTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/channels/AbstractSeekableByteChannelTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/channels/ByteArraySeekableByteChannelTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/channels/CloseShieldChannelTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/channels/FilterWritableByteChannelTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/channels/ByteArraySeekableByteChannelCompressTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/comparator/CompositeFileComparatorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/channels/FilterReadableByteChannelTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/channels/FilterSeekableByteChannelTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/CharsetsTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/ThreadMonitorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/FileUtilsDeleteDirectoryWindowsTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/channels/FilterByteChannelTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/TaggedIOExceptionTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/channels/FileChannelsTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/IOUtilsTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/RandomAccessFileModeTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IOBooleanSupplierTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/channels/FilterFileChannelTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IOBiFunctionTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/charset/CharsetEncodersTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/ByteBuffersTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/LineIteratorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IOSupplierTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IOUnaryOperatorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/IOUtilsConcurrentTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IOTriFunctionTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IOIterableTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IOComparatorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/FileSystemTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IOPredicateTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IOBaseStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IOLongSupplierTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IOQuadFunctionTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IOSpliteratorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IOIntSupplierTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IOFunctionTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IOBiConsumerTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IOIteratorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IOBinaryOperatorStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IOTriConsumerTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IOIteratorAdapterTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IOIntConsumerTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/serialization/RegexpClassNameMatcherTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/UncheckTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/serialization/MoreComplexObjectTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/serialization/AbstractCloseableListTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/serialization/ProxyTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/serialization/FullClassNameMatcherTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/serialization/ValidatingObjectInputStreamStrictTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/spi/FileSystemProvidersTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/TempDirectoryTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/DirectoryWalkerTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/CountingPathVisitorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/PathUtilsVisitorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/PathUtilsDeleteTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IOStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/PathUtilsCountingTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/CleaningPathVisitorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IOConsumerTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/CountersTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/DeletingPathVisitorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/TestArguments.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/PathUtilsIsEmptyTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/PathUtilsCleanDirectoryTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/DirectoryStreamFilterTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/PathUtilsDeleteDirectoryTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/attribute/FileTimesTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/TempFileTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/CountersEqualsAndHashCodeTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/FileUtilsWaitForTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/PathUtilsDeleteFileTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/AbstractTempDirTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/FilesUncheckTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/FileUtilsCopyDirectoryToDirectoryTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/charset/CharsetDecodersTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/CopyDirectoryVisitorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/AccumulatorPathVisitorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/CopyUtilsTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/PathUtilsTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/FileUtilsCleanSymlinksTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/IORandomAccessFileTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/comparator/ExtensionFileComparatorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/IOUtilsMultithreadedSkipTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/DemuxInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/EndianUtilsTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/IOExceptionWithCauseTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/monitor/FileEntryTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/PathUtilsContentEqualsTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/FileUtilsFileNewerTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/TeeReaderTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/comparator/NameFileComparatorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/ReversedLinesFileReaderSimpleTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/ReadAheadInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/NullInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/CircularInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/FileUtilsDeleteDirectoryLinuxTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/BrokenReaderTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/UnsynchronizedByteArrayInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/CharSequenceInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/ObservableInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/CountingInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/comparator/PathFileComparatorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/FilenameUtilsTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/ProxyReaderTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/monitor/FileAlterationObserverWithListenerExceptionTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/ClassLoaderObjectInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/UnsynchronizedBufferedReaderTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/InfiniteCircularInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/ReversedLinesFileReaderParamFileTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/CharacterFilterReaderIntPredicateTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/UnixLineEndingInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/MemoryMappedFileInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/AutoCloseInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/FileDeleteStrategyTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/TailerCloseTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/MarkShieldInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/UncheckedFilterInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/BOMInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/RandomAccessFileInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/DeleteDirectoryTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/TimestampedObserverTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/StringBuilderWriterTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/ThrottledInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/XmlStreamReaderTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/UncheckedFilterReaderTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/IOCaseTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/MessageDigestCalculatingInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/AbstractInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/BoundedReaderTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/BufferedFileChannelInputStreamTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/UnsynchronizedFilterInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/UnsynchronizedBufferedInputStreamTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/MessageDigestInputStreamTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/monitor/FileAlterationMonitorTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/CharacterFilterReaderTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/CloseShieldInputStreamTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/TeeInputStreamTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/ChecksumInputStreamTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/ByteBufferCleanerTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/ReaderInputStreamTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/XmlStreamReaderUtilitiesTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/ProxyInputStreamTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/CloseShieldReaderTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/ClosedInputStreamTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/UncheckedBufferedReaderTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/QueueInputStreamTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/TaggedInputStreamTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/SequenceReaderTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/ClosedReaderTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/BrokenInputStreamTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/ReversedLinesFileReaderParamBlockSizeTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/buffer/CircularBufferInputStreamTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/buffer/PeekableInputStreamTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/CharSequenceReaderTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/StandardLineSeparatorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/monitor/SerializableFileTimeTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/buffer/CircularByteBufferTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/filefilter/DirectoryFileFilterTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/filefilter/AbstractConditionalFileFilterTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/filefilter/AndFileFilterTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/filefilter/PathMatcherFileFilterTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/filefilter/AbstractFilterTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/filefilter/AbstractIOFileFilterTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/filefilter/RegexFileFilterTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/filefilter/AgeFileFilterTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/filefilter/OrFileFilterTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/filefilter/SymbolicLinkFileFilterTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/filefilter/NameFileFilterTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/comparator/ComparatorAbstractTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/TailerTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/filefilter/WildcardFileFilterTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/AbstractFileUtilsDeleteDirectoryTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/UncheckedIOExceptionsTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/test/TestUtils.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/AppendableWriterTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/ClosedWriterTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/ByteOrderMarkTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/HexDumpTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/FileUtilsCopyToFileTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/UncheckedAppendableTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/CountingOutputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/BrokenOutputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/XmlStreamWriterTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/monitor/AbstractMonitorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/NullAppendableTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/IOExceptionListTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/ChunkedOutputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/TaggedOutputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/CloseShieldWriterTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/WriterOutputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/IOUtilsCopyTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/RandomAccessFilesTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/comparator/DefaultFileComparatorTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/EraseTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/function/IORunnableTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/serialization/WildcardClassNameMatcherTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/serialization/ValidatingObjectInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/FileUtilsDirectoryContainsTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/FileUtilsTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/file/PathUtilsCopyTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/CharacterSetFilterReaderTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/TaggedReaderTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/SwappedDataInputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/FileSystemUtilsTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/IOIndexedExceptionTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/output/CloseShieldOutputStreamTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/FileCleaningTrackerTest.java
+Sep 10, 2026 9:39:52 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/WindowsLineEndingInputStreamTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/BoundedInputStreamTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/input/NullReaderTest.java
+Sep 10, 2026 9:39:53 AM io.github.arieslab.core.JNoseCallable call
+INFO: getFilesTest: /projects/commons-io/src/test/java/org/apache/commons/io/filefilter/FileFilterTest.java
+Detected test classes: 247
+Analysis completed.
+Output directory: /results/commons-io
