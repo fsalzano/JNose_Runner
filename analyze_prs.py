@@ -2,7 +2,9 @@ import json
 import os
 import subprocess
 import logging
+import threading
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor
 from tqdm import tqdm
 
 # Logging configuration
@@ -24,6 +26,17 @@ TOOLS_DIR = BASE_DIR / "tools"
 JNOSE_JAR = TOOLS_DIR / "jnose-core.jar"
 RUNNER_BIN = TOOLS_DIR / "bin"
 CHECKOUT_INFO_FILE = BASE_DIR / "checkout_info.json"
+
+# Lock dictionary for repositories to avoid concurrent checkouts on the same repo
+repo_locks = {}
+repo_locks_lock = threading.Lock()
+
+def get_repo_lock(repo_name):
+    """Returns a lock for a specific repository."""
+    with repo_locks_lock:
+        if repo_name not in repo_locks:
+            repo_locks[repo_name] = threading.Lock()
+        return repo_locks[repo_name]
 
 def run_command(command, cwd=None):
     """Executes a shell command and returns the result."""
@@ -48,12 +61,10 @@ def checkout_commit(repo_path, commit_hash):
         logging.error(f"Error during checkout of {commit_hash} in {repo_path}: {error}")
     return success
 
-def run_jnose(repo_path, output_name):
+def run_jnose(repo_path, output_name, pr_id):
     """Runs JNose via Docker and saves the results with a specific name."""
-    # The runner saves test_class_summary.csv and test_smells.csv in a folder
-    # We rename test_smells.csv to <repo>_<hash>.csv
-    
-    temp_output_dir = RESULTS_DIR / "temp_jnose"
+    # Each PR needs its own temporary output directory to avoid conflicts in multithreading
+    temp_output_dir = RESULTS_DIR / "temp_jnose" / str(pr_id)
     temp_output_dir.mkdir(parents=True, exist_ok=True)
     
     # Pre-clean the temporary folder to avoid residues
@@ -61,7 +72,7 @@ def run_jnose(repo_path, output_name):
         if f.is_file():
             f.unlink()
 
-    logging.info(f"Running JNose on {repo_path}")
+    logging.info(f"Running JNose on {repo_path} (PR: {pr_id})")
     
     # Docker path mapping: REPOS_DIR -> /projects, TOOLS_DIR -> /tools, temp_output_dir -> /results
     repo_rel_path = os.path.relpath(repo_path, REPOS_DIR)
@@ -95,8 +106,35 @@ def run_jnose(repo_path, output_name):
         logging.error(f"test_smells.csv not found after execution.")
         return False
 
-def analyze_prs(limit=0):
-    """Loads PR info and starts analysis."""
+def process_single_pr(pr, repo_path):
+    """Processes a single PR: checkout and JNose analysis for both base and target commits."""
+    repo_name = pr['repo_name']
+    lock = get_repo_lock(repo_name)
+    
+    try:
+        # Use a lock to ensure only one thread is operating on the same repo folder at a time
+        with lock:
+            # 1. Base Commit Analysis
+            if checkout_commit(repo_path, pr['base_commit']):
+                output_name_base = f"{repo_name}_{pr['base_commit']}"
+                run_jnose(repo_path, output_name_base, pr['pr_id'])
+            
+            # 2. Target Commit Analysis (merge or head)
+            if checkout_commit(repo_path, pr['target_commit']):
+                output_name_target = f"{repo_name}_{pr['target_commit']}"
+                run_jnose(repo_path, output_name_target, pr['pr_id'])
+                
+    except Exception as e:
+        logging.error(f"Exception during analysis of PR #{pr.get('pr_number', 'unknown')}: {str(e)}")
+    
+    # Cleanup temp directory for this PR
+    temp_output_dir = RESULTS_DIR / "temp_jnose" / str(pr['pr_id'])
+    if temp_output_dir.exists():
+        import shutil
+        shutil.rmtree(temp_output_dir)
+
+def analyze_prs(limit=0, workers=8):
+    """Loads PR info and starts multithreaded analysis."""
     if not CHECKOUT_INFO_FILE.exists():
         logging.error(f"File {CHECKOUT_INFO_FILE} not found.")
         return
@@ -119,27 +157,19 @@ def analyze_prs(limit=0):
         logging.warning(f"No repositories found in {REPOS_DIR} for PRs in {CHECKOUT_INFO_FILE}.")
         return
 
-    logging.info(f"Starting analysis of {len(prs_to_analyze)} PRs.")
+    logging.info(f"Starting analysis of {len(prs_to_analyze)} PRs with {workers} workers.")
     
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
-    # Use tqdm to show analysis progress
-    for pr, repo_path in tqdm(prs_to_analyze, desc="PR Analysis"):
-        try:
-            # 1. Base Commit Analysis
-            if checkout_commit(repo_path, pr['base_commit']):
-                output_name_base = f"{pr['repo_name']}_{pr['base_commit']}"
-                run_jnose(repo_path, output_name_base)
-            
-            # 2. Target Commit Analysis (merge or head)
-            if checkout_commit(repo_path, pr['target_commit']):
-                output_name_target = f"{pr['repo_name']}_{pr['target_commit']}"
-                run_jnose(repo_path, output_name_target)
-                
-        except Exception as e:
-            logging.error(f"Exception during analysis of PR #{pr['pr_number']}: {str(e)}")
-            continue
+    # Use ThreadPoolExecutor for parallel execution
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        # We use a list to keep track of futures and tqdm for the progress bar
+        futures = [executor.submit(process_single_pr, pr, repo_path) for pr, repo_path in prs_to_analyze]
+        
+        # tqdm updates when each future finishes
+        for _ in tqdm(futures, desc="PR Analysis"):
+            _.result() # Wait for completion and raise exceptions if any occurred inside the thread
 
 if __name__ == "__main__":
-    # Analyze all available PRs
-    analyze_prs(limit=0)
+    # Analyze all available PRs with 8 workers
+    analyze_prs(limit=0, workers=8)
