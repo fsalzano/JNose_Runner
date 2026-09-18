@@ -7,18 +7,21 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 from tqdm import tqdm
 
+# Constants and paths
+BASE_DIR = Path(__file__).resolve().parent
+
 # Logging configuration
+LOGS_DIR = BASE_DIR / "logs"
+LOGS_DIR.mkdir(parents=True, exist_ok=True)
+
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler("analysis.log"),
+        logging.FileHandler(LOGS_DIR / "analysis.log"),
         # Removed StreamHandler to avoid interference with tqdm
     ]
 )
-
-# Constants and paths
-BASE_DIR = Path(__file__).resolve().parent
 # The repositories directory is outside the project folder, at the path specified by the user
 REPOS_DIR = Path("/home/stakelab/testing-agentic-prs/data/repos")
 RESULTS_DIR = BASE_DIR / "results"
@@ -141,7 +144,7 @@ def process_single_pr(pr, repo_path):
         import shutil
         shutil.rmtree(temp_output_dir)
 
-def analyze_prs(limit=0, workers=8):
+def analyze_prs(limit=0, workers=32):
     """Loads PR info and starts multithreaded analysis."""
     if not CHECKOUT_INFO_FILE.exists():
         logging.error(f"File {CHECKOUT_INFO_FILE} not found.")
