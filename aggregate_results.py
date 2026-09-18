@@ -133,44 +133,46 @@ def process_aggregation():
 
     logging.info(f"Processing {len(pr_rows)} PR records...")
     
+    # REPOS_DIR configuration (absolute for server)
+    REPOS_DIR = Path("/home/stakelab/testing-agentic-prs/data/repos")
+    
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as out_f:
         for pr_id, pr_num, repo_full_name, base_sha, merge_sha, head_sha in pr_rows:
-            # TRY BOTH: name_with_owner (owner_repo) and short name
-            repo_short_name = repo_full_name.split('/')[-1]
-            repo_disk_name_long = repo_full_name.replace('/', '_')
+            # We must use the same logic as analyze_prs.py to find the repo name on disk
+            repo_disk_name = repo_full_name.replace('/', '_')
             
-            target_sha = merge_sha if merge_sha else head_sha
+            repo_path = REPOS_DIR / repo_disk_name
             
-            # Paths to check
-            base_file = None
-            target_file = None
-            
-            possible_base_paths = [
-                RESULTS_DIR / f"{repo_disk_name_long}_{base_sha}.csv",
-                RESULTS_DIR / f"{repo_short_name}_{base_sha}.csv"
-            ]
-            possible_target_paths = [
-                RESULTS_DIR / f"{repo_disk_name_long}_{target_sha}.csv",
-                RESULTS_DIR / f"{repo_short_name}_{target_sha}.csv"
-            ]
-            
-            for p in possible_base_paths:
-                if p.exists():
-                    base_file = p
-                    break
-            
-            for p in possible_target_paths:
-                if p.exists():
-                    target_file = p
-                    break
-            
-            if not base_file and not target_file:
+            if not repo_path.exists():
                 continue
+
+            # We need to handle both merge commits (new logic) and non-merge (old/head logic)
+            # User wants to "prendere il parent della merge".
+            p1, p2 = None, None
+            if merge_sha:
+                def get_parents(r_path, m_hash):
+                    cmd = ["git", "-C", str(r_path), "rev-parse", f"{m_hash}^1", f"{m_hash}^2"]
+                    import subprocess
+                    res = subprocess.run(cmd, capture_output=True, text=True)
+                    if res.returncode == 0:
+                        return res.stdout.strip().split('\n')
+                    return None, None
+                
+                p1, p2 = get_parents(repo_path, merge_sha)
             
-            if not base_file:
-                logging.warning(f"Base CSV missing for PR {pr_num} ({repo_full_name}) at {base_sha}")
-            if not target_file:
-                logging.warning(f"Target CSV missing for PR {pr_num} ({repo_full_name}) at {target_sha}")
+            if p1 and p2:
+                base_sha_to_use = p1
+                target_sha_to_use = p2
+            else:
+                # Fallback to original base/head if not a merge or parents not found
+                base_sha_to_use = base_sha
+                target_sha_to_use = merge_sha if merge_sha else head_sha
+            
+            base_file = RESULTS_DIR / f"{repo_disk_name}_{base_sha_to_use}.csv"
+            target_file = RESULTS_DIR / f"{repo_disk_name}_{target_sha_to_use}.csv"
+            
+            if not base_file.exists() or not target_file.exists():
+                continue
 
             before_data = parse_jnose_csv(base_file)
             after_data = parse_jnose_csv(target_file)
@@ -180,8 +182,9 @@ def process_aggregation():
                 "pr_id": pr_id,
                 "pr_number": pr_num,
                 "repository": repo_full_name,
-                "base_commit": base_sha,
-                "target_commit": target_sha,
+                "merge_commit": merge_sha,
+                "p1_commit": p1,
+                "p2_commit": p2,
                 "metrics": {
                     "before": before_data,
                     "after": after_data,

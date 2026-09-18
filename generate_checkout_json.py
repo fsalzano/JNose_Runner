@@ -30,25 +30,24 @@ def generate_json():
                 r.name_with_owner as repo_full_name
             FROM pull_requests pr
             JOIN repositories r ON pr.base_repository_id = r.id
-            WHERE pr.has_test_files = TRUE;
+            WHERE pr.has_test_files = TRUE AND pr.merge_commit_oid IS NOT NULL;
         """
         cur.execute(query)
         rows = cur.fetchall()
         
         checkout_data = []
         for row in rows:
-            # Commit selection logic:
-            # use merge_commit_oid if available, otherwise head_commit_oid
-            target_commit = row['merge_commit_oid'] if row['merge_commit_oid'] else row['head_commit_oid']
+            # We want to compare P1 (base before merge) and P2 (PR head at merge time)
+            # which are the two parents of the merge_commit_oid.
             
             entry = {
                 "pr_id": row['id'],
                 "pr_number": row['number'],
                 "repo_name": row['repo_name'],
                 "repo_full_name": row['repo_full_name'],
+                "merge_commit": row['merge_commit_oid'],
                 "base_commit": row['base_commit_oid'],
-                "target_commit": target_commit,
-                "analysis_commit_type": "merge" if row['merge_commit_oid'] else "head"
+                "head_commit": row['head_commit_oid']
             }
             checkout_data.append(entry)
             

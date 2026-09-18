@@ -117,23 +117,41 @@ def run_jnose(repo_path, output_name, pr_id):
         print(error_msg)
         return False
 
+def get_merge_parents(repo_path, merge_hash):
+    """Returns the two parents of a merge commit."""
+    success, output = run_command(["git", "rev-parse", f"{merge_hash}^1", f"{merge_hash}^2"], cwd=repo_path)
+    if success:
+        parents = output.strip().split('\n')
+        if len(parents) == 2:
+            return parents
+    logging.error(f"Could not get parents for merge commit {merge_hash} in {repo_path}")
+    return None, None
+
 def process_single_pr(pr, repo_path):
-    """Processes a single PR: checkout and JNose analysis for both base and target commits."""
-    repo_name = pr['repo_name']
-    lock = get_repo_lock(repo_name)
+    """Processes a single PR: checkout and JNose analysis for both merge parents (P1 and P2)."""
+    repo_name_on_disk = pr['repo_full_name'].replace('/', '_')
+    lock = get_repo_lock(repo_name_on_disk)
     
     try:
         # Use a lock to ensure only one thread is operating on the same repo folder at a time
         with lock:
-            # 1. Base Commit Analysis
-            if checkout_commit(repo_path, pr['base_commit']):
-                output_name_base = f"{repo_name}_{pr['base_commit']}"
-                run_jnose(repo_path, output_name_base, pr['pr_id'])
+            merge_hash = pr['merge_commit']
+            p1, p2 = get_merge_parents(repo_path, merge_hash)
             
-            # 2. Target Commit Analysis (merge or head)
-            if checkout_commit(repo_path, pr['target_commit']):
-                output_name_target = f"{repo_name}_{pr['target_commit']}"
-                run_jnose(repo_path, output_name_target, pr['pr_id'])
+            if not p1 or not p2:
+                # Fallback to original behavior if it is not a merge commit or parents missing
+                logging.warning(f"PR {pr['pr_number']} does not have two parents for merge {merge_hash}. Skipping.")
+                return
+
+            # 1. Parent 1 Analysis (Base state at merge time)
+            if checkout_commit(repo_path, p1):
+                output_name_p1 = f"{repo_name_on_disk}_{p1}"
+                run_jnose(repo_path, output_name_p1, pr['pr_id'])
+            
+            # 2. Parent 2 Analysis (PR state at merge time)
+            if checkout_commit(repo_path, p2):
+                output_name_p2 = f"{repo_name_on_disk}_{p2}"
+                run_jnose(repo_path, output_name_p2, pr['pr_id'])
                 
     except Exception as e:
         logging.error(f"Exception during analysis of PR #{pr.get('pr_number', 'unknown')}: {str(e)}")
@@ -144,7 +162,7 @@ def process_single_pr(pr, repo_path):
         import shutil
         shutil.rmtree(temp_output_dir)
 
-def analyze_prs(limit=0, workers=32):
+def analyze_prs(limit=0, workers=36):
     """Loads PR info and starts multithreaded analysis."""
     if not CHECKOUT_INFO_FILE.exists():
         logging.error(f"File {CHECKOUT_INFO_FILE} not found.")
